@@ -1,13 +1,79 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main-background {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("./materials/images/pexels-rahul-pandit-2792386.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.player {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background-color: rgba(110, 138, 145, 0.9)
+}
+
+footer {
+    width: 100%;
+    min-height: 25vh;
+    background: rgb(51, 51, 51);
+    background: radial-gradient(circle, rgba(51, 51, 51, 1) 0%, rgba(33, 33, 33, 1) 100%);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+/* 
+#volume-input {
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border-radius: 99px;
+    cursor: pointer;
+} */
+
+
+/*General*/
+
+.pointer {
+    cursor: pointer;
+}
+
+.btn-hvr {
+    transition: ease 0.1s;
+}
+
+.btn-hvr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-hvr:active {
+    background-color: rgba(88, 88, 88, 0.7);
+}
+
+.active-btn {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.black {
+    color: #000;
+}
+
+.fs-7 {
+    font-size: 14px;
 }
