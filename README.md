@@ -1,2 +1,3 @@
-arkada video dönebilir
-şarkı bittiğinde sıradaki şarkıya geçsin EĞER LOOP AÇIK DEĞİLSE
+https://h-solak.github.io/rain-sounds/
+*Still in progress
+-It will be responsive soon
