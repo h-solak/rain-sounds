@@ -102,8 +102,8 @@ const Player = () => {
         <TiArrowLoop
           className={
             isLooped
-              ? "fs-2 pointer btn-hvr rounded-circle active-btn"
-              : "fs-2 pointer btn-hvr rounded-circle"
+              ? "fs-2 pointer rounded-circle activatable-btn active-btn"
+              : "fs-2 pointer rounded-circle activatable-btn"
           }
           onClick={loopAudio}
           title={isLooped ? "On loop" : "Not on loop"}
