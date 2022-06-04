@@ -106,3 +106,9 @@ footer {
 .font-40px {
     font-size: 40px;
 }
+
+@media screen and (max-width: 768px) {
+    .btn-hvr:hover {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
