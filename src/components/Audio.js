@@ -24,6 +24,7 @@ const Audio = ({ crrSong, isPlaying, setIsPlaying, isLooped, volume }) => {
 
   useEffect(() => {
     document.getElementById(songs[crrSong]).play();
+    //this still causes a bug -- if user interacts with the website, it will start to play...
   }, [crrSong]);
 
   return <audio id={songs[crrSong]} src={songs[crrSong]}></audio>;
