@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/rain-sounds/static/css/main.5b060655.css",
-    "main.js": "/rain-sounds/static/js/main.22f6d0b8.js",
+    "main.css": "/rain-sounds/static/css/main.90cb7761.css",
+    "main.js": "/rain-sounds/static/js/main.b8bdd0e4.js",
+    "static/media/pexelsRainSlide.mp4": "/rain-sounds/static/media/pexelsRainSlide.c6e0f06b2d3e09de3701.mp4",
     "static/media/pexels-rahul-pandit-2792386.jpg": "/rain-sounds/static/media/pexels-rahul-pandit-2792386.920cb05765420f831e85.jpg",
     "static/media/withThunder.mp3": "/rain-sounds/static/media/withThunder.362739063cbcbf700182.mp3",
     "static/media/withThunderMetalRoof.mp3": "/rain-sounds/static/media/withThunderMetalRoof.b7ee8a84e7ecf1112c27.mp3",
     "static/media/distantThunder.mp3": "/rain-sounds/static/media/distantThunder.a250dd229676cf4b9278.mp3",
     "index.html": "/rain-sounds/index.html",
-    "main.5b060655.css.map": "/rain-sounds/static/css/main.5b060655.css.map",
-    "main.22f6d0b8.js.map": "/rain-sounds/static/js/main.22f6d0b8.js.map"
+    "static/media/footerwave.svg": "/rain-sounds/static/media/footerwave.88a6bd8e1a9c007488d3.svg",
+    "main.90cb7761.css.map": "/rain-sounds/static/css/main.90cb7761.css.map",
+    "main.b8bdd0e4.js.map": "/rain-sounds/static/js/main.b8bdd0e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b060655.css",
-    "static/js/main.22f6d0b8.js"
+    "static/css/main.90cb7761.css",
+    "static/js/main.b8bdd0e4.js"
   ]
 }
