@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rain-sounds/static/css/main.b3fcc7ce.css",
+    "main.css": "/rain-sounds/static/css/main.9565d20a.css",
     "main.js": "/rain-sounds/static/js/main.63aed9bf.js",
     "static/media/pexelsRainSlide.mp4": "/rain-sounds/static/media/pexelsRainSlide.c6e0f06b2d3e09de3701.mp4",
     "static/media/pexels-rahul-pandit-2792386.jpg": "/rain-sounds/static/media/pexels-rahul-pandit-2792386.920cb05765420f831e85.jpg",
@@ -9,11 +9,11 @@
     "static/media/distantThunder.mp3": "/rain-sounds/static/media/distantThunder.a250dd229676cf4b9278.mp3",
     "index.html": "/rain-sounds/index.html",
     "static/media/footerwave.svg": "/rain-sounds/static/media/footerwave.88a6bd8e1a9c007488d3.svg",
-    "main.b3fcc7ce.css.map": "/rain-sounds/static/css/main.b3fcc7ce.css.map",
+    "main.9565d20a.css.map": "/rain-sounds/static/css/main.9565d20a.css.map",
     "main.63aed9bf.js.map": "/rain-sounds/static/js/main.63aed9bf.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3fcc7ce.css",
+    "static/css/main.9565d20a.css",
     "static/js/main.63aed9bf.js"
   ]
 }
