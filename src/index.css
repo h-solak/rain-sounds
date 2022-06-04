@@ -17,20 +17,46 @@ body {
     background-repeat: no-repeat;
 }
 
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .player {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
-    background-color: rgba(110, 138, 145, 0.9)
+    width: 600px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.39);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.1px);
+    -webkit-backdrop-filter: blur(12.1px);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+}
+
+.player:hover {}
+
+.switch-bg {
+    position: absolute;
+    left: 95%;
+    top: 90%;
+    transform: translate(-50%, -50%);
 }
 
 footer {
     width: 100%;
     min-height: 25vh;
-    background: rgb(51, 51, 51);
-    background: radial-gradient(circle, rgba(51, 51, 51, 1) 0%, rgba(33, 33, 33, 1) 100%);
+    background-image: url(./materials/footerwave.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
 }
 
 ::-webkit-scrollbar {
@@ -71,9 +97,13 @@ footer {
 }
 
 .black {
-    color: #000;
+    color: #101010;
 }
 
 .fs-7 {
     font-size: 14px;
+}
+
+.font-40px {
+    font-size: 40px;
 }

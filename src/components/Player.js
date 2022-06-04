@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { TiMediaPlay, TiMediaPauseOutline, TiArrowLoop } from "react-icons/ti";
+import {
+  TiMediaPlay,
+  TiMediaPauseOutline,
+  TiArrowLoop,
+  TiVolumeMute,
+  TiVolumeUp,
+} from "react-icons/ti";
 import { MdOutlineSkipNext, MdOutlineSkipPrevious } from "react-icons/md";
 import Audio from "./Audio";
 
@@ -44,23 +50,23 @@ const Player = () => {
     <div className="player p-3 rounded-3 d-flex align-items-center justify-content-around">
       <div className="buttons d-flex align-items-center gap-2">
         <MdOutlineSkipPrevious
-          className="fs-2 pointer btn-hvr rounded-circle"
+          className="font-40px pointer btn-hvr rounded-circle"
           onClick={prevSong}
         />
         {isPlaying ? (
           <TiMediaPauseOutline
-            className="fs-2 pointer rounded-circle btn-hvr d-flex"
+            className="font-40px pointer rounded-circle btn-hvr d-flex"
             onClick={pauseAudio}
           />
         ) : (
           <TiMediaPlay
-            className="fs-2 pointer rounded-circle btn-hvr d-flex"
+            className="font-40px pointer rounded-circle btn-hvr d-flex"
             onClick={playAudio}
           />
         )}
 
         <MdOutlineSkipNext
-          className="fs-2 pointer btn-hvr rounded-circle"
+          className="font-40px pointer btn-hvr rounded-circle"
           onClick={nextSong}
         />
 
@@ -74,26 +80,33 @@ const Player = () => {
           onClick={loopAudio}
           title={isLooped ? "On loop" : "Not on loop"}
         />
-
-        <Audio
-          crrSong={crrSong}
-          isPlaying={isPlaying}
-          isLooped={isLooped}
-          volume={volume}
-          setIsPlaying={setIsPlaying}
-        />
       </div>
       <span className="fs-6">Rain Sound {crrSong + 1}</span>
-      <input
-        id="volume-input"
-        type="range"
-        className="w-25 pointer"
-        value={volume}
-        min="0"
-        max="1"
-        step="0.01"
-        onChange={changeVolume}
-        title={volume * 100 + "%"}
+      <div className="d-flex align-items-center gap-1">
+        {volume > 0 ? (
+          <TiVolumeUp className="fs-4" onClick={() => setVolume(0)} />
+        ) : (
+          <TiVolumeMute className="fs-4" onClick={() => setVolume(0.5)} />
+        )}
+
+        <input
+          id="volume-input"
+          type="range"
+          className="w-75 pointer"
+          value={volume}
+          min="0"
+          max="1"
+          step="0.01"
+          onChange={changeVolume}
+          title={volume * 100 + "%"}
+        />
+      </div>
+      <Audio
+        crrSong={crrSong}
+        isPlaying={isPlaying}
+        isLooped={isLooped}
+        volume={volume}
+        setIsPlaying={setIsPlaying}
       />
     </div>
   );
