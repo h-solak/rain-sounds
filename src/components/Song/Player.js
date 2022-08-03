@@ -53,10 +53,10 @@ const Player = ({ isSongPlayerVisible }) => {
   return (
     <div>
       <div
-        className="song-player p-3 rounded-3 d-flex align-items-center justify-content-around gap-3 gap-lg-3"
+        className="song-player p-3 rounded-3 d-flex align-items-center justify-content-around flex-column gap-3 gap-lg-3"
         style={!isSongPlayerVisible ? { opacity: "0" } : { opacity: "1" }}
       >
-        <span style={{ fontSize: "12px" }}>
+        <span className="text-center" style={{ fontSize: "12px" }}>
           {crrSong === 0
             ? "Somewhere Over The Rainbow"
             : crrSong === 1
@@ -116,6 +116,7 @@ const Player = ({ isSongPlayerVisible }) => {
               step="0.01"
               onChange={changeVolume}
               title={volume * 100 + "%"}
+              style={{ width: "2rem" }}
             />
           </div>
 

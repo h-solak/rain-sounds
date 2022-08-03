@@ -107,6 +107,7 @@ const Player = () => {
           }
           onClick={loopAudio}
           title={isLooped ? "On loop" : "Not on loop"}
+          style={{ color: "#ff850a" }}
         />
       </div>
       <Audio

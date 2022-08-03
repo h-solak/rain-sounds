@@ -45,12 +45,13 @@ video {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.2);
+    /* From https://css.glass */
+    background: rgba(9, 9, 9, 0.38);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(9, 9, 9, 0.3);
 }
 
 .remove-player {
@@ -81,18 +82,59 @@ footer {
     width: 0px;
 }
 
-
-/* 
-#volume-input {
+#song-volume-input {
     -webkit-appearance: none;
     appearance: none;
     background: white;
     border-radius: 99px;
     cursor: pointer;
-} */
+}
 
-#song-volume-input {
-    width: 15px;
+input[type=range] {
+    width: 200px;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    /*extra*/
+    display: block;
+    position: relative;
+    border-radius: 99px;
+}
+
+input[type=range]::before,
+input[type=range]::after {
+    display: inline-block;
+    position: absolute;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: #ffcb91;
+    border-radius: 99px;
+    height: 5px;
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    border: none;
+    box-shadow: none;
+    height: 20px;
+    width: 6px;
+    border-radius: 99px;
+    background: #ff850a;
+    -webkit-appearance: none;
+    margin: -7px 0 0 0;
+    outline: none;
+}
+
+#song-volume-input::-webkit-slider-runnable-track {
+    background: #b6b6b6;
+}
+
+#song-volume-input::-webkit-slider-thumb {
+    background: #5e5e5e;
 }
 
 
@@ -141,5 +183,8 @@ footer {
     /*this added in order to fix a hover bug on mobile devices*/
     .activatable-btn:hover {
         opacity: 1;
+    }
+    .switch-bg {
+        left: 90%;
     }
 }
