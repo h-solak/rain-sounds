@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/rain-sounds/static/css/main.e2433950.css",
-    "main.js": "/rain-sounds/static/js/main.04d56ffd.js",
+    "main.css": "/rain-sounds/static/css/main.60414f6f.css",
+    "main.js": "/rain-sounds/static/js/main.fa3efd70.js",
     "static/media/pexelsRainSlide.mp4": "/rain-sounds/static/media/pexelsRainSlide.c6e0f06b2d3e09de3701.mp4",
     "static/media/pexels-rahul-pandit-2792386.jpg": "/rain-sounds/static/media/pexels-rahul-pandit-2792386.920cb05765420f831e85.jpg",
+    "static/media/LetDownRadiohead.mp3": "/rain-sounds/static/media/LetDownRadiohead.eb0f0870f48ee785aaa8.mp3",
+    "static/media/SomewhereOverTheRainbow.mp3": "/rain-sounds/static/media/SomewhereOverTheRainbow.30a50f6a4b952711c942.mp3",
+    "static/media/IdRatherDanceWithYou.mp3": "/rain-sounds/static/media/IdRatherDanceWithYou.5ddf9c3f372c5d860daf.mp3",
     "static/media/withThunder.mp3": "/rain-sounds/static/media/withThunder.362739063cbcbf700182.mp3",
     "static/media/withThunderMetalRoof.mp3": "/rain-sounds/static/media/withThunderMetalRoof.b7ee8a84e7ecf1112c27.mp3",
     "static/media/distantThunder.mp3": "/rain-sounds/static/media/distantThunder.a250dd229676cf4b9278.mp3",
     "index.html": "/rain-sounds/index.html",
     "static/media/footerwave.svg": "/rain-sounds/static/media/footerwave.88a6bd8e1a9c007488d3.svg",
-    "main.e2433950.css.map": "/rain-sounds/static/css/main.e2433950.css.map",
-    "main.04d56ffd.js.map": "/rain-sounds/static/js/main.04d56ffd.js.map"
+    "main.60414f6f.css.map": "/rain-sounds/static/css/main.60414f6f.css.map",
+    "main.fa3efd70.js.map": "/rain-sounds/static/js/main.fa3efd70.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2433950.css",
-    "static/js/main.04d56ffd.js"
+    "static/css/main.60414f6f.css",
+    "static/js/main.fa3efd70.js"
   ]
 }
