@@ -40,7 +40,26 @@ video {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.player:hover {}
+.song-player {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.remove-player {
+    display: none;
+}
+
+.song-player:hover .remove-player {
+    display: block;
+}
 
 .switch-bg {
     position: absolute;
@@ -71,6 +90,10 @@ footer {
     border-radius: 99px;
     cursor: pointer;
 } */
+
+#song-volume-input {
+    width: 15px;
+}
 
 
 /*General*/

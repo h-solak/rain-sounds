@@ -1,13 +1,17 @@
 import { useEffect, useState } from "react";
 
-import Audio from "./components/Audio";
+import Audio from "./components/RainSound/Audio";
 import Footer from "./components/Footer";
-import Player from "./components/Player";
+import Player from "./components/RainSound/Player";
+import SongPlayer from "./components/Song/Player";
 import RainVideo from "./materials/videos/pexelsRainSlide.mp4";
 import BgPic from "./materials/images/pexels-rahul-pandit-2792386.jpg";
 import { BsFillCloudFill, BsFillCloudDrizzleFill } from "react-icons/bs";
+import { CgMusic } from "react-icons/cg";
 function App() {
   const [isVidRunning, setIsVidRunning] = useState(true);
+  const [isSongPlayerVisible, setIsSongPlayerVisible] = useState(false);
+
   function switchVid() {
     let video = document.getElementById("main-video");
     if (video.paused) {
@@ -33,20 +37,33 @@ function App() {
         />
 
         <Player />
+        <SongPlayer isSongPlayerVisible={isSongPlayerVisible} />
         <span>Pause Video?</span>
-        {isVidRunning ? (
-          <BsFillCloudDrizzleFill
-            className="switch-bg fs-3 pointer"
-            title="Stop video"
-            onClick={switchVid}
+        <div className="switch-bg d-flex align-items-center gap-3">
+          <CgMusic
+            className="fs-3 pointer"
+            onClick={() => setIsSongPlayerVisible(!isSongPlayerVisible)}
+            title={
+              isSongPlayerVisible
+                ? "Hide the song player"
+                : "Show the song player"
+            }
+            style={!isSongPlayerVisible ? { opacity: "0.6" } : null}
           />
-        ) : (
-          <BsFillCloudFill
-            className="switch-bg fs-3 pointer"
-            title="Resume video"
-            onClick={switchVid}
-          />
-        )}
+          {isVidRunning ? (
+            <BsFillCloudDrizzleFill
+              className="fs-3 pointer"
+              title="Stop video"
+              onClick={switchVid}
+            />
+          ) : (
+            <BsFillCloudFill
+              className="fs-3 pointer"
+              title="Resume video"
+              onClick={switchVid}
+            />
+          )}
+        </div>
       </div>
       <Footer />
     </>
