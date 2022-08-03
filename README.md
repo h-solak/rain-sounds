@@ -1,3 +1,2 @@
-https://h-solak.github.io/rain-sounds/  
-*Still in progress*  
--It will be responsive soon
+Listen to relaxing rain sounds on loop.  
+https://h-solak.github.io/rain-sounds/
